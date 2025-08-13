@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ExaMart - Dropshipping Store</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.5;
+      padding: 10px;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 10px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80') no-repeat center/cover;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .product-card p.description {
+      color: #666;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .product-card p.price {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: #007bff;
+    }
+
+    .product-card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 0;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Small devices tweaks */
+    @media (min-width: 600px) {
+      .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .product-card {
+        flex: 1 1 250px;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  ExaMart
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  Your One-Stop Dropshipping Store
+</section>
+
+<section class="products">
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1585386959984-a415522e1e97?auto=format&fit=crop&w=600&q=80" alt="Wireless Earbuds" />
+    <h3>Wireless Earbuds</h3>
+    <p class="description">High-quality sound with noise cancellation.</p>
+    <p class="price">$29.99</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1512295767273-7c63c4a6ee53?auto=format&fit=crop&w=600&q=80" alt="Smartwatch" />
+    <h3>Smartwatch</h3>
+    <p class="description">Track your fitness and notifications on the go.</p>
+    <p class="price">$49.99</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Portable Speaker" />
+    <h3>Portable Speaker</h3>
+    <p class="description">Compact size with excellent sound quality.</p>
+    <p class="price">$39.99</p>
+    <button>Add to Cart</button>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 ExaMart. All rights reserved.
+</footer>
+
+</body>
+</html>
